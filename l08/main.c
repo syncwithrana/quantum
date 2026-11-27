@@ -17,8 +17,8 @@ int main(void) {
   FPGAIO->LED |= LED_BLUE;
   while (1) {
     FPGAIO->LED |= LED_RED;
-    delay(100000000);
+    delay(10000000);
     FPGAIO->LED &= ~LED_RED;
-    delay(100000000);
+    delay(10000000);
   }
 }

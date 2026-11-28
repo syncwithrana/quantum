@@ -10,7 +10,7 @@ TARGET       = $(BUILD_DIR)/rtos.elf
 
 CFLAGS       = -mcpu=cortex-m3 -mthumb -ffreestanding -O0 -g -Wall -I. -I$(PLATFORM_DIR)
 LDFLAGS      = -T $(PLATFORM_DIR)/linker.ld -nostartfiles -nostdlib
-SRCS         = $(PLATFORM_DIR)/startup.c main.c
+SRCS         = $(PLATFORM_DIR)/startup.c main.c delay.c
 
 all: $(TARGET)
 
